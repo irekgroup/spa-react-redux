@@ -1,0 +1,62 @@
+
+.card {
+    border: 1px solid #D58C51;
+    padding: 21px 21px 21px 21px;
+}
+
+.card_price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card_price:hover {color:#D58C51;}
+
+.card__description {
+    margin: 0px 0px 40px 0px;
+}
+
+.card__description:hover {color:#D58C51;}
+
+.card__header {
+    margin: 0px 0px 40px 0px;
+}
+
+.card__header:hover {color:#D58C51;}
+
+.basket {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 13%;
+    padding-left: 1090px;
+    padding-bottom: 50px;
+}
+
+.basket__desc {
+    padding-right: 10px;
+}
+
+.add {
+    display: block;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF
+}
+
+.textButton {color: #fff; font-size: 14px;}
+
+.add:hover {background: #D58C51; color: #fff; border:#FFFFFF;}
+
+.addColor {
+    display: none;
+}
+
+
+
+
+
+
+
+
