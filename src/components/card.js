@@ -4,7 +4,7 @@ import './card.css';
 
 
 
-function Card ({url, tittle, description, price}) {
+function Card ({url, tittle, description, price, weight}) {
 
  /*    React.useEffect (() => {
     let add = document.querySelector ('#addColorS')
@@ -34,7 +34,7 @@ function Card ({url, tittle, description, price}) {
         </p>
 
         <div className='card_price'>
-        {price}
+        {price} {weight}
 
         <div> <button className='add'><b className='textButton'> + </b></button></div>
         </div>

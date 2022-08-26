@@ -1,8 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import Card from './components/card.js';
+import {products} from './products.js'
 
 function App() {
+
   return (
     <main className='main'>
       <div className='container'>
@@ -16,16 +18,27 @@ function App() {
       </div>
       </header>
       <div className='menu'>
+        {products.map (key => {
+          return (
+            <Card
+            url={key.url}
+            tittle={key.tittle}
+            description={key.description}
+            price={key.price}
+            weight={key.weight}
+            />
+          )
+        })}
 
-      <Card
+{/*       <Card
       url={'img/1.png'}
       tittle={'Устрицы по рокфеллеровски'}
       description={'Значимость этих проблем настолько очевидна, что укрепление и развитие структуры '}
       price={'2 700 ₽/ 500 г.'}
       urlIcon={'img/pluse_white.png'}
-      />
+      /> */}
 
-      <Card
+      {/* <Card
       url={'img/2.png'}
       tittle={'Свиные ребрышки на гриле с зеленью'}
       description={'Не следует, однако забывать, что реализация намеченных плановых, что укрепление '}
@@ -79,7 +92,7 @@ function App() {
       description={'Значимость этих проблем настолько очевидна, что укрепление и развитие структуры '}
       price={'2 700 ₽/ 500 г.'}
       urlIcon={'img/pluse_white.png'}
-      />
+      /> */}
 
       </div>
       </div>

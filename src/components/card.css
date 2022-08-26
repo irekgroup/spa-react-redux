@@ -37,6 +37,7 @@
 }
 
 .add {
+    cursor: pointer;
     display: block;
     border-radius: 100%;
     width: 30px;
