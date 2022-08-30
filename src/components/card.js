@@ -1,25 +1,6 @@
-import React, {useRef} from 'react';
-import './card.css';
-
-
-
+import '..Pages/card.css';
 
 function Card ({url, tittle, description, price, weight}) {
-
- /*    React.useEffect (() => {
-    let add = document.querySelector ('#addColorS')
-    let addColor = document.querySelector ('#notColor')
-
-    if (add.type == 'mouseover') {
-        add.target.display = 'none';
-        addColor.target.display = 'block';
-    } else (add.type == 'mouseout') {
-        add.target.display = 'block';
-        addColor.target.display = 'none';
-    }
-    })
- */
-
 
     return (
     <div className="card">
