@@ -1,0 +1,40 @@
+.basket__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.basket__preview {
+    width: 122px;
+    height: 122px;
+    padding-top: 20px;
+}
+
+.basket__header_card {
+    font-weight: 300;
+}
+
+.basket__price {
+    position: relative;
+    left: 100px;
+    color: #D58C51;
+}
+
+.textButton {
+    font-weight: 100;
+    color: #D58C51;
+    position: relative;
+    bottom: 6px;
+}
+
+.basket__add {
+    margin-left: 10px;
+    cursor: pointer;
+    display: block;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #D58C51
+}
+

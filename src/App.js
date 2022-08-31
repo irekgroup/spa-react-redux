@@ -1,4 +1,5 @@
 import './components/cardBasked.css';
+import CardBasket from '../src/components/cardBasked.js';
 import './pages/App.css';
 import {productsBasket} from '../src/components/basketProducts.js'
 
@@ -12,6 +13,17 @@ function App() {
       КОРЗИНА С ВЫБРАННЫМИ ТОВАРАМИ
       </h1>
     </header>
+
+    {productsBasket.map (key => {
+          return (
+            <CardBasket
+            url={key.url}
+            tittle={key.tittle}
+            price={key.price}
+            />
+          )
+        })}
+
     <div className="basket__footer">
       <div className="basket__summaryText">ЗАКАЗ НА СУММУ:</div>
       <p className="basket__summary">6 220 ₽</p>

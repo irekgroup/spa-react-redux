@@ -1,20 +1,15 @@
-import '..src/components/cardBasket.css';
 
 function CardBasket ({url, tittle, price}) {
 
     return (
-    <div className="card">
-        <img className='card__preview' src={url} alt='' />
+    <div className="basket__card">
+        <img className='basket__preview' src={url} alt='' />
 
-        <h2 className='card__header'>
-        {tittle}
-        </h2>
+        <h3 className='basket__header_card'>{tittle}</h3>
 
-        <div className='card_price'>
-        {price}
+        <div className='basket__price'>{price}</div>
 
-        <div> <button className='add'><b className='textButton'> x </b></button></div>
-        </div>
+        <button className='basket__add' id="check-boxEnt"><p className='textButton' for="check-boxEnt"> X </p></button>
     </div>
     );
   }
