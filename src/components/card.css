@@ -46,7 +46,7 @@
     border: 1px solid #FFFFFF
 }
 
-.textButton {color: #fff; font-size: 14px;}
+.textButton_products {color: #fff; font-size: 18px; font-weight: normal;}
 
 .add:hover {background: #D58C51; color: #fff; border:#FFFFFF;}
 

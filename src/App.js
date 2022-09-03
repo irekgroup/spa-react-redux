@@ -1,43 +1,15 @@
-import './components/cardBasked.css';
-import CardBasket from '../src/components/cardBasked.js';
-import './pages/App.css';
-import {productsBasket} from '../src/components/basketProducts.js'
+import './components/App.css';
+import Basket from './pages/Basket'
+
+import Products from './pages/Products'
 
 function App() {
 
   return (
-  <div className='basket'>
-    <div className='basket__container'>
-    <header>
-      <h1 className='basket__header'>
-      КОРЗИНА С ВЫБРАННЫМИ ТОВАРАМИ
-      </h1>
-    </header>
+  <div className="">
+    <Products/>
+    {/* <Basket/> */}
 
-    {productsBasket.map (key => {
-          return (
-            <CardBasket
-            url={key.url}
-            tittle={key.tittle}
-            price={key.price}
-            />
-          )
-        })}
-
-    <div className="basket__footer">
-      <div className="basket__summaryText">ЗАКАЗ НА СУММУ:</div>
-      <p className="basket__summary">6 220 ₽</p>
-      <button className="basket__button">Оформить заказ</button>
-    </div>
-    </div>
-    <div
-        style={{
-          background: '#D58C51',
-          height: '1px',
-          position: 'sticky',
-          bottom: '89px',
-        }}
-      />
   </div>
   );
 }

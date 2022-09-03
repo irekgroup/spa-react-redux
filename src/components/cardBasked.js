@@ -9,7 +9,7 @@ function CardBasket ({url, tittle, price}) {
 
         <div className='basket__price'>{price}</div>
 
-        <button className='basket__add' id="check-boxEnt"><p className='textButton' for="check-boxEnt"> X </p></button>
+        <button className='basket__add' id="check-boxEnt"><p className='textButton' for="check-boxEnt"> ╳ </p></button>
     </div>
     );
   }

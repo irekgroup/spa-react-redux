@@ -1,5 +1,3 @@
-import '..Pages/card.css';
-
 function Card ({url, tittle, description, price, weight}) {
 
     return (
@@ -17,12 +15,10 @@ function Card ({url, tittle, description, price, weight}) {
         <div className='card_price'>
         {price} {weight}
 
-        <div> <button className='add'><b className='textButton'> + </b></button></div>
+        <div> <button className='add'><b className='textButton_products'> + </b></button></div>
         </div>
     </div>
     );
   }
-
-
 
   export default Card;
