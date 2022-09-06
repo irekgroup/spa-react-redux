@@ -1,0 +1,76 @@
+.authorization {
+    background: url(/public/img/Authorization.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.authorization-container {
+    width: 100vh;
+    height: 100vh;
+}
+
+.authorization-form {
+    width: 460px;
+    height: 340px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.authorization-header {
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+    padding-bottom: 30px;
+}
+
+.authorization-form {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 45px 26px 34px;
+
+}
+
+.authorization-input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    border: 1px solid #D58C51;
+    border-radius: 61px;
+
+}
+
+.authorization-input::placeholder {padding-left: 20px; font-size: 16px ;}
+
+.custom-radio {
+    position: relative;
+    top: 3px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #D58C51;
+    margin-bottom: 30px;
+
+}
+
+.authButton {
+    margin: 0 auto;
+    width: 200px;
+    height: 42px;
+    background: #D58C51;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+

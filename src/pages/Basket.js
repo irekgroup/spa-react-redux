@@ -1,17 +1,18 @@
 import CardBasket from '../components/cardBasked';
 import {productsBasket} from '../components/basketProducts'
 import '../pages/Basket.css';
+import MenuBox from '../components/menuBox/menuBox'
 
 function Basket () {
     return (
-        <div className='basket'>
+        <div className='basket_components'>
         <div className='basket__container'>
+        <MenuBox/>
         <header>
           <h1 className='basket__header'>
           КОРЗИНА С ВЫБРАННЫМИ ТОВАРАМИ
           </h1>
         </header>
-    
         {productsBasket.map (key => {
               return (
                 <CardBasket
