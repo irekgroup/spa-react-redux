@@ -4,17 +4,14 @@ import MenuBox from '../src/components/menuBox/menuBox'
 import Products from './pages/Products'
 
 import Authorization from './pages/Authorization'
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
+    return (
+        <h1>FFF</h1>
 
-  return (
-  <div className="">
-    {/* <Products/> */}
-    <Basket/>
-    {/* <Authorization/> */}
-
-  </div>
-  );
+    );
 }
 
 export default App;
+
