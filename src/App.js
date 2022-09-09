@@ -4,8 +4,8 @@ import Basket from './pages/Basket'
 import Products from './pages/Products'
 
 import Authorization from './pages/Authorization'
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 
-import {Routes, Route} from 'react-router-dom'
 
 function App() {
 
@@ -20,3 +20,4 @@ function App() {
 }
 
 export default App;
+

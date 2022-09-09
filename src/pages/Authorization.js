@@ -8,6 +8,7 @@ function Authorization () {
     return (
         <main className="authorization">
             <MenuBox/>
+            <MenuBox/>
             <div className="authorization-container">
                 <form className="authorization-form">
                 <h1 className="authorization-header">ВХОД</h1>

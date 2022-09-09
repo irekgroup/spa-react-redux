@@ -30,6 +30,6 @@ function MenuBox () {
             </ul>
 
         </div>
-    )
+    );
 }
 export default MenuBox;

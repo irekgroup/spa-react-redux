@@ -1,5 +1,5 @@
 import CardBasket from '../components/cardBasked';
-import {productsBasket} from '../components/basketProducts'
+import {productsBasket} from '../mocks/basketProducts'
 import '../pages/Basket.css';
 import MenuBox from '../components/menuBox/menuBox'
 import {useSelector} from 'react-redux'
