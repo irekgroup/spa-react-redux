@@ -6,9 +6,10 @@
     background-size: cover;
 }
 
+
 .authorization-container {
     width: 100vh;
-    height: 100vh;
+    height: calc(100vh - 21px) ;
 }
 
 .authorization-form {

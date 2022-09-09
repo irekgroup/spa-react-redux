@@ -2,8 +2,12 @@ import CardBasket from '../components/cardBasked';
 import {productsBasket} from '../components/basketProducts'
 import '../pages/Basket.css';
 import MenuBox from '../components/menuBox/menuBox'
+import {useSelector} from 'react-redux'
 
 function Basket () {
+  const basket = useSelector(state => state.basket.basket)
+  console.log(basket);
+
     return (
         <div className='basket_components'>
         <div className='basket__container'>

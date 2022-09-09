@@ -1,0 +1,29 @@
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.main {
+  background: #161516;
+  color: #fff;
+  overflow-x: auto;
+}
+
+.header {
+  position: relative;
+  top: 53px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  height: calc(100vh - 167px);
+  overflow-x: auto;
+}
+
+.menu .card {
+  width: 260px;
+}
+
+

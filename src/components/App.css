@@ -18,7 +18,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  height: calc(100vh - 143px);
+  height: calc(100vh - 164px);
   overflow-x: auto;
 }
 
