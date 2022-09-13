@@ -3,6 +3,11 @@
     color: #fff;
 }
 
+.basket__favorites {
+    height: calc(100vh - 197px);
+    overflow-x: auto;
+}
+
 .basket__card {
     display: flex;
     justify-content: space-between;
@@ -21,7 +26,7 @@
 
 .basket__price {
     position: relative;
-    left: 100px;
+    bottom: 9px;
     color: #D58C51;
 }
 
@@ -33,9 +38,9 @@
 }
 
 .basket__add {
-    margin-left: 10px;
+    margin-left: 40px;
+    margin-right: 20px;
     cursor: pointer;
-    display: block;
     border-radius: 100%;
     width: 30px;
     height: 30px;

@@ -2,8 +2,20 @@ import Card from '../components/card';
 import {productsList} from '../components/productsList'
 import '../components/card.css'
 import MenuBox from "../components/menuBox/menuBox";
+import {Link} from 'react-router-dom'
+
+import React, { useState } from 'react'
 
 function Products() {
+
+    const [total, setTotal] = useState(0)
+    const [totalProduct, setTotalProduct] = useState(0)
+
+    const addPriceProduct = (price) => {
+    setTotal (total + Number(price))
+    setTotalProduct(totalProduct + 1)
+    }
+
     return (
         <main className='main'>
             <MenuBox/>
@@ -13,13 +25,14 @@ function Products() {
                     <div className="basket">
                         <div className='basket__desc'>
         <span className='basket__desc-span'>
-        3 товара
+        {totalProduct} товара
         </span>
                             <br/>
                             <span>
-        на сумму 3 500 ₽
+        на сумму {total} ₽
         </span>
                         </div>
+                        <Link to='/basket'>
                         <button className='add_basket'>
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -28,6 +41,8 @@ function Products() {
                                     fill="white"/>
                             </svg>
                         </button>
+                        </Link>
+
                     </div>
 
                 </header>
@@ -48,5 +63,5 @@ function Products() {
         </main>
     )
 }
-
+/* export const {total} = Products.setTotal */
 export default Products;

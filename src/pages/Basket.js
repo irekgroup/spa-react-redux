@@ -1,13 +1,14 @@
 import CardBasket from '../components/cardBasked';
-import {productsBasket} from '../mocks/basketProducts'
 import '../pages/Basket.css';
 import MenuBox from '../components/menuBox/menuBox'
+import EmptyBasket from '../components/emptyBasket'
 import {useSelector} from 'react-redux'
+/* import {total} from './Products.js' */
 
 function Basket () {
+
   const basket = useSelector(state => state.basket.basket)
   console.log(basket);
-
     return (
         <div className='basket_components'>
         <div className='basket__container'>
@@ -17,19 +18,22 @@ function Basket () {
           КОРЗИНА С ВЫБРАННЫМИ ТОВАРАМИ
           </h1>
         </header>
-        {productsBasket.map (key => {
+        <EmptyBasket/>
+        <div className='basket__favorites'>
+        {basket.map (key => {
               return (
                 <CardBasket
+                id={key.id}
                 url={key.url}
                 tittle={key.tittle}
                 price={key.price}
                 />
               )
             })}
-    
+        </div>
         <div className="basket__footer">
           <div className="basket__summaryText">ЗАКАЗ НА СУММУ:</div>
-          <p className="basket__summary">6 220 ₽</p>
+          <p className="basket__summary">{/* {total} */} ₽</p>
           <button className="basket__button">Оформить заказ</button>
         </div>
         </div>
