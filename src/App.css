@@ -18,8 +18,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  height: calc(100vh - 167px);
+  height: calc(100vh - 164px);
   overflow-x: auto;
+}
+
+.menu::-webkit-scrollbar {
+  width: 0;
 }
 
 .menu .card {

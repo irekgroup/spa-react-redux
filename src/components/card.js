@@ -1,3 +1,4 @@
+import '../../src/App.css'
 import React, { useRef} from 'react'
 import {useDispatch} from 'react-redux'
 import {addProduct} from '../store/reducers/basket'

@@ -1,4 +1,4 @@
-import { createSlice, current } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 const basketSlice = createSlice ({
     name: 'basket',
@@ -11,11 +11,14 @@ const basketSlice = createSlice ({
         addProduct(state, action) {
             state.basket.push(action.payload)
 
-            /* state.pricesProducts = state.basket.reduce((price, current) => {
-                return price+current.price
-            }, 0) */
+            state.pricesProducts = state.basket.reduce((price, current) => {
+                return Number (price) + Number (current.price)
+            }, 0)
         },
         removeProductBasket(state, action) {
+
+            state.pricesProducts = Number(state.pricesProducts) - Number(state.basket.filter(el => el.id === action.payload.id)[0].price)
+
             state.basket = state.basket.filter((item) => item.id !== action.payload.id)
         }
     }

@@ -3,12 +3,12 @@ import '../pages/Basket.css';
 import MenuBox from '../components/menuBox/menuBox'
 import EmptyBasket from '../components/emptyBasket'
 import {useSelector} from 'react-redux'
-/* import {total} from './Products.js' */
+
 
 function Basket () {
 
   const basket = useSelector(state => state.basket.basket)
-  console.log(basket);
+  const totalProduct = useSelector((state) => state.basket.pricesProducts)
     return (
         <div className='basket_components'>
         <div className='basket__container'>
@@ -18,7 +18,7 @@ function Basket () {
           КОРЗИНА С ВЫБРАННЫМИ ТОВАРАМИ
           </h1>
         </header>
-        <EmptyBasket/>
+        {!basket.length && <EmptyBasket/>}
         <div className='basket__favorites'>
         {basket.map (key => {
               return (
@@ -33,7 +33,7 @@ function Basket () {
         </div>
         <div className="basket__footer">
           <div className="basket__summaryText">ЗАКАЗ НА СУММУ:</div>
-          <p className="basket__summary">{/* {total} */} ₽</p>
+          <p className="basket__summary">{totalProduct} ₽</p>
           <button className="basket__button">Оформить заказ</button>
         </div>
         </div>

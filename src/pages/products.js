@@ -4,17 +4,12 @@ import '../components/card.css'
 import MenuBox from "../components/menuBox/menuBox";
 import {Link} from 'react-router-dom'
 
-import React, { useState } from 'react'
+import { useSelector } from 'react-redux';
 
 function Products() {
 
-    const [total, setTotal] = useState(0)
-    const [totalProduct, setTotalProduct] = useState(0)
-
-    const addPriceProduct = (price) => {
-    setTotal (total + Number(price))
-    setTotalProduct(totalProduct + 1)
-    }
+    const count = useSelector ((state) => state.basket.basket.length)
+    const totalProduct = useSelector((state) => state.basket.pricesProducts)
 
     return (
         <main className='main'>
@@ -25,11 +20,11 @@ function Products() {
                     <div className="basket">
                         <div className='basket__desc'>
         <span className='basket__desc-span'>
-        {totalProduct} товара
+        {count} товара
         </span>
                             <br/>
                             <span>
-        на сумму {total} ₽
+        на сумму {totalProduct} ₽
         </span>
                         </div>
                         <Link to='/basket'>
