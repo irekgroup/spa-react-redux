@@ -1,0 +1,19 @@
+.PageProducts_back {
+    position: absolute;
+    left: 100px;
+    top: 80px;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: 1px solid #D58C51;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.PageProducts_symbol {
+    position: relative;
+    bottom: 18px;
+    right: 2px;
+    font-size: 20px;
+    color: #D58C51;
+}

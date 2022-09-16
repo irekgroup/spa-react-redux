@@ -8,22 +8,28 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-decoration: inherit;
+    color: #fff;
 }
 .card_price:hover {color:#D58C51;}
 
 .card__description {
     margin: 0px 0px 40px 0px;
+    text-decoration: none;
+    color: #fff;
 }
 
 .card__description:hover {color:#D58C51;}
 
 .card__header {
     margin: 0px 0px 40px 0px;
+    text-decoration: none;
+    color: #fff;
 }
 
 .card__header:hover {color:#D58C51;}
 
-.basket {
+/* .basket {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -61,7 +67,7 @@
 
 .addColor {
     display: none;
-}
+} */
 
 
 

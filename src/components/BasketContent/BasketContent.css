@@ -1,0 +1,47 @@
+.basket {
+    position: absolute;
+    right: 200px;
+    display: flex;
+/*     justify-content: flex-end;
+    align-items: center;
+    padding-left: 1090px;
+    padding-bottom: 50px; */
+    background-color: inherit;
+}
+
+.basket_position {
+    position: relative;
+    right: 45px;
+}
+
+.basket__desc {
+    padding-right: 10px;
+}
+
+.add {
+    cursor: pointer;
+    display: block;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid #FFFFFF
+}
+
+.add_basket {
+    cursor: pointer;
+    display: block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #D58C51;
+
+}
+
+.textButton_products {color: #fff; font-size: 18px; font-weight: normal;}
+
+.add:hover {background: #D58C51; color: #fff; border:#FFFFFF;}
+
+.addColor {
+    display: none;
+}

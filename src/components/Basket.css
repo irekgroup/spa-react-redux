@@ -22,6 +22,7 @@
 
 .basket__header_card {
     font-weight: 300;
+    color: #D58C51;
 }
 
 .basket__price {
@@ -58,4 +59,9 @@
     height: 40px;
     background-color: #D58C51;
     cursor: pointer;
+}
+
+.basket__button {
+    position: relative;
+    left: 400px;
 }

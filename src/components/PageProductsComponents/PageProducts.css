@@ -1,0 +1,20 @@
+.PageProducts {
+    background: url(/public/img/PageProducts.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.PageProducts_container {
+    width: 100vh;
+    height: 100vh;
+}
+
+.PageProducts_header {
+    width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    top: 53px;
+}

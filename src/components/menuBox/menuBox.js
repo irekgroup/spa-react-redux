@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 function MenuBox () {
 
 
-    let [menuVisible, setMenuVisible] = useState(true)
+    let [menuVisible, setMenuVisible] = useState(false)
     const toggleClick = () => setMenuVisible (!menuVisible)
 
     const burgerMenu = useRef ()

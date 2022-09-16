@@ -18,7 +18,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  height: calc(100vh - 164px);
+  height: calc(100vh - 64px);
   overflow-x: auto;
 }
 
@@ -56,13 +56,9 @@
   color: #D58C51;
 }
 
-.basket__button {
-  margin: 0px 0px 0px 400px;
-  width: 200px;
-  height: 42px;
-  background: #D58C51
 
-}
+
+
 
 
 

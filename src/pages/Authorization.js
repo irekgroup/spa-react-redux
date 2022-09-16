@@ -1,13 +1,12 @@
 import '../components/authComponents/authorization.css'
 import InputAuth from '../components/authComponents/inputAuth'
 import Checkbox from '../components/authComponents/authCheckbox'
-import AuthButton from '../components/authComponents/authButton'
+import Button from '../components/authComponents/Button'
 import MenuBox from '../components/menuBox/menuBox'
 
 function Authorization () {
     return (
         <main className="authorization">
-            <MenuBox/>
             <MenuBox/>
             <div className="authorization-container">
                 <form className="authorization-form">
@@ -19,7 +18,9 @@ function Authorization () {
                 <div className="authorization-input_checkbox">
                 <Checkbox/>
                 </div>
-                <AuthButton/>
+                <Button
+                name = {'Войти'}
+                />
                 </form>
             </div>
         </main>

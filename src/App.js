@@ -4,6 +4,9 @@ import Basket from './pages/Basket'
 import Products from './pages/Products'
 
 import Authorization from './pages/Authorization'
+
+import PageProducts from './pages/PageProducts'
+
 import {Route, Routes} from "react-router-dom";
 
 
@@ -15,6 +18,7 @@ function App() {
     <Route path='/products' element={<Products/>}/>
     <Route path='/basket' element={<Basket/>}/>
     <Route path='/authorization' element={<Authorization/>}/>
+    <Route path='/page' element={<PageProducts/>}/>
 </Routes>
   );
 }

@@ -1,8 +1,10 @@
 import CardBasket from '../components/cardBasked';
-import '../pages/Basket.css';
+import '../components/Basket.css';
 import MenuBox from '../components/menuBox/menuBox'
 import EmptyBasket from '../components/emptyBasket'
+import GoBackButton from '../components/Buttons/GoBackButton/GoBackButton'
 import {useSelector} from 'react-redux'
+import Button from '../components/authComponents/Button'
 
 
 function Basket () {
@@ -14,6 +16,7 @@ function Basket () {
         <div className='basket__container'>
         <MenuBox/>
         <header>
+          <GoBackButton/>
           <h1 className='basket__header'>
           КОРЗИНА С ВЫБРАННЫМИ ТОВАРАМИ
           </h1>
@@ -34,7 +37,12 @@ function Basket () {
         <div className="basket__footer">
           <div className="basket__summaryText">ЗАКАЗ НА СУММУ:</div>
           <p className="basket__summary">{totalProduct} ₽</p>
-          <button className="basket__button">Оформить заказ</button>
+          <div className="basket__button">
+          <Button
+          name={'Оформить заказ'}
+          />
+          </div>
+
         </div>
         </div>
         <div

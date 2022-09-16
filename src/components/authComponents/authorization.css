@@ -6,10 +6,19 @@
     background-size: cover;
 }
 
-
 .authorization-container {
     width: 100vh;
-    height: calc(100vh - 43px) ;
+    height: calc(100vh - 21px) ;
+}
+
+.authButton {
+    margin: 0 auto;
+    width: 200px;
+    height: 42px;
+    background: #D58C51;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .authorization-form {
@@ -59,15 +68,7 @@
 
 }
 
-.authButton {
-    margin: 0 auto;
-    width: 200px;
-    height: 42px;
-    background: #D58C51;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-}
+
 
 
 
