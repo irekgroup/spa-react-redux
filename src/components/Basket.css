@@ -4,9 +4,28 @@
 }
 
 .basket__favorites {
-    height: calc(100vh - 197px);
+    height: calc(100vh - 210x);
     overflow-x: auto;
+    position: absolute;
+    top: 200px;
+    width: 40%;
 }
+
+.basket__favorites::-webkit-scrollbar {
+    width: 10px;
+    position: relative;
+    left: 5px;
+  }
+  .basket__favorites::-webkit-scrollbar-track {
+    background: #fff;        /* цвет дорожки */
+    border-radius: 20px;
+  }
+
+  .basket__favorites::-webkit-scrollbar-thumb {
+    background-color: #161516;    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+    border: 3px solid #fff;  /* padding вокруг плашки */
+  }
 
 .basket__card {
     display: flex;
@@ -23,6 +42,19 @@
 .basket__header_card {
     font-weight: 300;
     color: #D58C51;
+}
+
+.basket__header {
+    display: flex;
+    align-items: center;
+    position: absolute;
+
+}
+
+.basket__header-btn {
+    position: relative;
+    left: 200px;
+
 }
 
 .basket__price {

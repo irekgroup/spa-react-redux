@@ -10,13 +10,15 @@
   overflow-x: auto;
   height: 100vh;
 }
-.testing {
-  height: 10vh;
 
-}
 .header {
   position: relative;
   top: 53px;
+}
+
+.header-btn {
+  position: absolute;
+  right: 200px;
 }
 
 .menu {
@@ -26,10 +28,23 @@
   flex-wrap: wrap;
   gap: 14px;
   overflow-x: auto;
+  height: calc(100vh - 134px);
 }
 
 .menu::-webkit-scrollbar {
-  width: 0;
+  width: 10px;
+  position: relative;
+  left: 5px;
+}
+.menu::-webkit-scrollbar-track {
+  background: #fff;        /* цвет дорожки */
+  border-radius: 20px;
+}
+
+.menu::-webkit-scrollbar-thumb {
+  background-color: #161516;    /* цвет плашки */
+  border-radius: 20px;       /* закругления плашки */
+  border: 3px solid #fff;  /* padding вокруг плашки */
 }
 
 .menu .card {

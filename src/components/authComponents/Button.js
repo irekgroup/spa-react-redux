@@ -1,7 +1,19 @@
-function Button (props) {
-    return (
-        <button className="authButton"> {props.name}</button>
-    )
-}
+    import '../authComponents/authorization.css'
 
-export default Button;
+    function Button ({type, name}) {
+
+        const btnClass = ['authButton']
+
+        if (type === 'authButton') {
+            btnClass.push('authButton')
+        }
+        else if(type === 'productButton')
+        {btnClass.push('productButton')}
+
+        return (
+            <button className={btnClass.join(' ')}> {name}</button>
+        )
+    }
+
+    export default Button;
+

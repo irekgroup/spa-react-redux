@@ -1,0 +1,44 @@
+.PageProductsCard_preview {
+    position: absolute;
+    left: 140px;
+    top: 200px;
+    width: 590px;
+    height: 590px;
+}
+
+.PageProductsCard_header {
+    position: absolute;
+    right: 200px;
+    top: 230px;
+    font-size: 30px;
+    font-weight: 1000;
+    color: #D58C51;
+}
+
+.PageProductsCard_description {
+    position: absolute;
+    color: #fff;
+    right: 150px;
+    top: 350px;
+    font-size: 40px;
+    width: 30%;
+    font-weight: 500;
+}
+
+
+.PageProductsCard_price {
+    position: absolute;
+    right: 469px;
+    bottom: 150px;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 1000;
+}
+
+.PageProductsCard_add {
+    position: absolute;
+    right: 165px;
+    bottom: 150px;
+    font-size: 30px;
+    font-weight: 1000;
+}

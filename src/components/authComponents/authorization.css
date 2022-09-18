@@ -11,6 +11,14 @@
     height: calc(100vh - 21px) ;
 }
 
+.auth-form {
+    display: block;
+}
+
+.reg-form {
+    display: none;
+}
+
 .authButton {
     margin: 0 auto;
     width: 200px;
@@ -19,9 +27,20 @@
     border: none;
     font-size: 16px;
     cursor: pointer;
+    color: black;
+}
+
+.productButton {
+    width: 200px;
+    height: 42px;
+    background: transparent;
+    border: #D58C51 1px solid;
+    color: #D58C51;
+    cursor: pointer;
 }
 
 .authorization-form {
+    display: none;
     width: 460px;
     height: 340px;
     background-color: #fff;
@@ -66,6 +85,17 @@
     border: 1px solid #D58C51;
     margin-bottom: 30px;
 
+}
+
+.btn-reg {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: underline;
+    background-color: inherit;
+    color: #D58C51;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 

@@ -7,14 +7,36 @@
 
 }
 
+.PageProducts_btn-back {
+    position: relative;
+}
+
+.PageProducts_btn {
+    position: absolute;
+    right: 100px;
+    top: 70px;
+}
+
+/* .PageProducts_MenuBox {
+    position: relative;
+} */
+
+.PageProducts_BasketContent {
+    position: absolute;
+    right: 150px;
+    top: 70px;
+    width: 100%;
+}
+
 .PageProducts_container {
     width: 100vh;
     height: 100vh;
 }
 
-.PageProducts_header {
-    width: 1500px;
-    margin: 0 auto;
-    position: relative;
-    top: 53px;
-}
+/* .PageProducts-header {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+} */
+
+

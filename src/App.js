@@ -1,27 +1,27 @@
-import './components/App.css';
-import Basket from './pages/Basket'
+  import './components/App.css';
+  import Basket from './pages/Basket'
 
-import Products from './pages/Products'
+  import Products from './pages/Products'
 
-import Authorization from './pages/Authorization'
+  import Authorization from './pages/Authorization'
 
-import PageProducts from './pages/PageProducts'
+  import PageProducts from './pages/PageProducts'
 
-import {Route, Routes} from "react-router-dom";
+  import {Route, Routes} from "react-router-dom";
 
 
-function App() {
+  function App() {
 
-  return (
-    <Routes>
-    <Route path='/' element={<Products/>}/>
-    <Route path='/products' element={<Products/>}/>
-    <Route path='/basket' element={<Basket/>}/>
-    <Route path='/authorization' element={<Authorization/>}/>
-    <Route path='/page' element={<PageProducts/>}/>
-</Routes>
-  );
-}
+    return (
+      <Routes>
+      <Route path='/' element={<Products/>}/>
+      <Route path='/products' element={<Products/>}/>
+      <Route path='/basket' element={<Basket/>}/>
+      <Route path='/authorization' element={<Authorization/>}/>
+      <Route path='/:id' element={<PageProducts/>}/>
+  </Routes>
+    );
+  }
 
-export default App;
+  export default App;
 
