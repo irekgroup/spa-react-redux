@@ -7,7 +7,7 @@
   import { v4 as uuid } from 'uuid'
 
 
-  function PageProductsCard ({url, tittle, description, price, weight}) {
+  function PageProductsCard ({url, tittle, description, price, weight, id}) {
 
     const dispatch = useDispatch()
 
@@ -16,10 +16,10 @@
       e.preventDefault()
 
           let item = {
-              id: uuid (),
-              tittle: tittle,
-              url: url,
-              price: price
+            id: uuid (),
+            tittle: tittle,
+            url: url,
+            price: price
           }
           console.log(item);
 

@@ -11,18 +11,18 @@
         /* const items= useSelector(state=>state.basket.basket); */
 
       const handleRemoveBasket = (e) => {
+
         e.preventDefault()
+
         let item = {
           id: id,
           tittle: tittle,
           url: url,
-          price: price,
-          description: description,
-          weight: weight
+          price: price
         }
         dispatch(removeProductBasket(item))
       }
-
+      console.log(handleRemoveBasket);
 
       const handleReadProduct = () => {
 
@@ -36,6 +36,7 @@
         }
         dispatch(readProduct(item))
     }
+    console.log(handleReadProduct);
 
         return (
         <Link onClick={handleReadProduct} to='/card' className="basket__card" style={{ textDecoration: 'none' }}>

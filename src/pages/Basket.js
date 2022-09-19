@@ -5,6 +5,7 @@
     import GoBackButton from '../components/Buttons/GoBackButton/GoBackButton'
     import {useSelector} from 'react-redux'
     import Button from '../components/authComponents/Button'
+    import { Link } from 'react-router-dom'
 
 
     function Basket () {
@@ -20,12 +21,15 @@
               <GoBackButton/>
               <h1 className='basket__header'>
               КОРЗИНА С ВЫБРАННЫМИ ТОВАРАМИ
+              <Link to='/authorization'>
               <div className='basket__header-btn' >
               <Button
                 name='Выйти'
                 type='productButton'
               />
               </div>
+                        </Link>
+
               </h1>
 
             </header>
@@ -53,7 +57,6 @@
                 type='authButton'
                 />
                 </div>
-
             </div>
             </div>
             <div

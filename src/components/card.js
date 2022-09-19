@@ -4,6 +4,7 @@
     import {addProduct} from '../store/reducers/basket'
     import { v4 as uuid } from 'uuid'
     import { Link } from 'react-router-dom'
+    import {readProduct} from '../store/reducers/card'
 
 
     function Card ({url, tittle, description, price, weight}) {
@@ -26,11 +27,24 @@
             dispatch(addProduct(item))
         }
 
+        const handleReadProduct = () => {
+
+            let item = {
+                id: uuid (),
+                tittle: tittle,
+                url: url,
+                price: price,
+                description: description,
+                weight: weight
+            }
+            dispatch(readProduct(item))
+        }
+
         const productAmount = useRef ()
 
         return (
 
-        <Link to='/card' className="card" style={{ textDecoration: 'none' }}>
+        <Link onClick={handleReadProduct} to='/card' className="card" style={{ textDecoration: 'none' }}>
             <img className='card__preview' src={url} alt='' />
 
             <h2 className='card__header'>

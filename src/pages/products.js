@@ -4,6 +4,7 @@
     import MenuBox from "../components/menuBox/menuBox";
     import BasketContent from '../components/BasketContent/BasketContent'
     import Button from '../components/authComponents/Button'
+    import { Link } from 'react-router-dom'
 
 
     function Products() {
@@ -16,12 +17,14 @@
                     <header>
                         <h1 className='header'>НАША ПРОДУКЦИЯ</h1>
                         <BasketContent/>
+                        <Link to='/authorization'>
                         <div className="header-btn">
                         <Button
                         name='Выйти'
                         type='productButton'
                         />
                         </div>
+                        </Link>
 
                     </header>
 

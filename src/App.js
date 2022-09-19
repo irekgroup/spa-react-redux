@@ -18,7 +18,7 @@
       <Route path='/products' element={<Products/>}/>
       <Route path='/basket' element={<Basket/>}/>
       <Route path='/authorization' element={<Authorization/>}/>
-      <Route path='/:id' element={<PageProducts/>}/>
+      <Route path='/card' element={<PageProducts/>}/>
   </Routes>
     );
   }

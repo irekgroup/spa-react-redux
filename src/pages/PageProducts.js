@@ -5,6 +5,7 @@
     import Button from '../components/authComponents/Button';
     import PageProductsCard from '../components/cardPageProducts'
     import {useSelector} from 'react-redux'
+    import { Link } from 'react-router-dom'
     /* import {productsList1} from '../components/productsList1' */
 
 
@@ -28,9 +29,9 @@
                     <BasketContent/>
                     </div>
 
-                    <div className="PageProducts_btn">
+                    <Link to='/authorization' className="PageProducts_btn">
                     <Button name='Выйти' type='productButton'/>
-                    </div>
+                    </Link>
 
                     </div>
 
