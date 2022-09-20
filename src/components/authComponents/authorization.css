@@ -17,6 +17,16 @@
 }
 
 .custom-radio {
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #D58C51;
+    margin-bottom: 30px;
+}
+
+.custom-radio {
     position: absolute;
     z-index: -1;
     opacity: 0;
@@ -24,17 +34,17 @@
 
 .custom-radio:checked+label::before {
     text-align: center;
-    color: #D58C51;
     border-radius: 50%;
-    content: '●';
-    font-size: 27px;
+    content:url(../../../public/img/checked.png);
+    font-size: 13px;
 }
+
 .custom-radio_label {
     display: flex;
     align-items: center;
     cursor: pointer;
     position: absolute;
-    bottom: 28px;
+    bottom: -12px;
 
 }
 .custom-radio_label::before {
@@ -47,9 +57,8 @@
     margin-right: 9px;
 }
 
-
 .authButton {
-    margin: 0 auto;
+    margin: 7% 29%;
     width: 200px;
     height: 42px;
     background: #D58C51;
@@ -67,6 +76,7 @@
     color: #D58C51;
     cursor: pointer;
 }
+
 
 .authorization-form {
     display: none;
@@ -106,18 +116,6 @@
 }
 
 .authorization-input::placeholder { font-size: 16px ;}
-
-
-
-.custom-radio {
-    cursor: pointer;
-    position: relative;
-    top: 3px;
-    width: 18px;
-    height: 18px;
-    border: 1px solid #D58C51;
-    margin-bottom: 30px;
-}
 
 .btn-reg {
     position: absolute;

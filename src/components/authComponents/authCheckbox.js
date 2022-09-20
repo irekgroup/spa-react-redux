@@ -7,11 +7,7 @@
             Я согласен получать обновления на почту
             </label>
             </div>
-
-
-
     )
     }
 
     export default Checkbox;
-    console.log(Checkbox);

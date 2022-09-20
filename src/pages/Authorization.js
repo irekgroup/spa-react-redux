@@ -1,6 +1,7 @@
     import '../components/authComponents/authorization.css'
     import InputAuth from '../components/authComponents/inputAuth'
     import Checkbox from '../components/authComponents/authCheckbox'
+    import CheckboxReg from '../components/authComponents/regCheckbox'
     import Button from '../components/authComponents/Button'
     import MenuBox from '../components/menuBox/menuBox'
     import RegBtn from '../components/authComponents/RegBtn'
@@ -13,11 +14,13 @@
         let mail, password, login = useRef()
 
         //проверка на пустую строку и выведение errorimage.png
-        function empty (mail, password, login) {
+        /* function empty (mail, password, login) {
             if (mail.value === '') {
 
             }
-        }
+        } */
+
+        /* mail.value === '' && <Error/> */
 
         return (
 
@@ -26,6 +29,7 @@
                     <div className="authorization-container">
                             <div className="auth-form" /* ref={formRegRef} */>
                                 <form className="authorization-form">
+                                    <div className="registration-entrance">
                                     <div /* onClick={ClickReg} */ className="registration-btn">
                                         <RegBtn name={'Зарегистрироваться'}/>
                                     </div>
@@ -63,6 +67,7 @@
                                         name= 'Логин или пароль неверен'
                                         type= 'error'
                                         />
+                                    </div>
                                     </div>
                                 </form>
                             </div>
@@ -108,7 +113,8 @@
                                         />
                                     </div>
                                 <div className="reg-input_checkbox">
-                                <Checkbox/>
+                                {/* <Checkbox/> */}
+                                <CheckboxReg/>
                                 </div>
                                 <Button
                                 name = {'Зарегистрироваться'}

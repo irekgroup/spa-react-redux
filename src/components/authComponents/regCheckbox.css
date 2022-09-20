@@ -1,0 +1,36 @@
+.checkboxReg {
+    margin-top: 15px;
+    position: relative;
+}
+
+.checkboxReg_custom-radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.checkboxReg_custom-radio:checked+label::before {
+    text-align: center;
+    border-radius: 50%;
+    content:url(../../../public/img/checked.png);
+    font-size: 13px;
+}
+
+.checkboxReg-radio_label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: -12px;
+}
+
+.checkboxReg-radio_label::before {
+    position: relative;
+    content: '';
+    width: 18px;
+    height: 18px;
+    border: 2px solid #D58C51;
+    border-radius: 50%;
+    margin-right: 9px;
+}
+
