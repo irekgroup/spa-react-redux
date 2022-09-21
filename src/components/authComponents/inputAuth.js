@@ -1,6 +1,13 @@
-    function InputAuth (props) {
+    function InputAuth ({type, id, onChange, value, placeholder}) {
         return (
-            <input type="text" placeholder= {props.name} className="authorization-input" />
+            <input
+            id={id}
+            onChange={onChange}
+            value={value}
+            type={type}
+            placeholder= {placeholder}
+            className="authorization-input"
+            />
         )
     }
 

@@ -10,6 +10,5 @@ import './regCheckbox.css'
             </div>
     )
     }
-    console.log(CheckboxReg);
 
     export default CheckboxReg;

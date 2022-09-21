@@ -11,6 +11,13 @@
     height: calc(100vh - 21px) ;
 }
 
+.registration-container {
+    width: 100vh;
+    height: calc(100vh - 0px) ;
+}
+
+
+
 .custom-radio_desc {
     margin-top: 15px;
     position: relative;
@@ -108,8 +115,8 @@
 .authorization-input {
     width: 90%;
     height: 40px;
-    margin-bottom: 15px;
     border: 1px solid #D58C51;
+    margin-bottom: 15px;
     border-radius: 61px;
     outline: none;
     padding-left: 40px;
@@ -133,30 +140,72 @@
 }
 
 .error_class {
+    color: #CB2424;
     display: none;
-    position: relative;
-    left: 40px;
-    bottom: 15px;
+    position: absolute;
+    left: 74px;
+    top: 134px;
+    font-size: 10px;
+}
+.error_class-pass {
+    color: #CB2424;
+    display: none;
+    position: absolute;
+    left: 74px;
+    top: 194px;
     font-size: 10px;
 }
 .login_class {
+    color: #CB2424;
     display: none;
-    position: relative;
-    left: 40px;
-    bottom: 15px;
+    position: absolute;
+    left: 74px;
+    top: 134px;
+    font-size: 10px;
+}
+.login_class-pass {
+    color: #CB2424;
+    display: none;
+    position: absolute;
+    left: 74px;
+    top: 194px;
+    font-size: 10px;
+}
+
+.error_pass-auth {
+    color: #CB2424;
+    display: none;
+    position: absolute;
+    left: 74px;
+    top: 192px;
+    font-size: 10px;
+}
+
+.loginAndPass {
+    color: #CB2424;
+    display: none;
+    position: absolute;
+    left: 200px;
+    top: 236px;
     font-size: 10px;
 }
 
 .error_class-auth {
+    color: #CB2424;
     display: none;
-    position: relative;
-    bottom: 70px;
-    left: 190px;
+    position: absolute;
+    left: 74px;
+    top: 134px;
     font-size: 10px;
 }
 
+.errorColor {
+    content: 'Поле не должно быть пустым';
+    color: #CB2424!important;
+}
+
 .auth-form {
-    display: none;
+    display: block;
 }
 
   .reg-form {

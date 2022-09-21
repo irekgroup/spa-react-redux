@@ -1,6 +1,6 @@
     import '../authComponents/authorization.css'
 
-    function Button ({type, name}) {
+    function Button ({type, name, onClick, styles}) {
 
         const btnClass = ['authButton']
 
@@ -11,7 +11,12 @@
         {btnClass.push('productButton')}
 
         return (
-            <button className={btnClass.join(' ')}> {name}</button>
+            <button
+            onClick={onClick}
+            type={type}
+            styles={styles}
+            className={btnClass.join(' ')}> {name}
+            </button>
         )
     }
 

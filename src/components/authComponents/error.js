@@ -1,11 +1,13 @@
-function Error ({name, type}) {
+function Error ({name, type, ref}) {
     
     const errorClass = ['error']
     if (type === 'error') {
         errorClass.push ('error')
     }
     return (
-        <span className={errorClass.join(' ')}>{name}</span>
+        <span
+        ref={ref}
+        className={errorClass.join(' ')}>{name}</span>
     )
 }
 
