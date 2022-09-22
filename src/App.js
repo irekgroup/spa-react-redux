@@ -15,11 +15,15 @@
 
   function App() {
 
-    const navigate = useNavigate()
+    /* const navigate = useNavigate()
 
-    useEffect(()=>{
+    useEffect(() => {
+
+      let users = localStorage.getItem('users')
+      if (!users) {
       navigate('/authorization')
-    })
+      }
+    }, []) */
 
     return (
       <Routes>

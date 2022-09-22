@@ -83,14 +83,9 @@
                     } else{
                         loginAndPass.current.style.display = 'block';
                     }
-
                 }
         }}
-        useEffect(()=>{
-            if (isCorrect) {
-            navigate('/basket')
-            }
-        })
+
         return (
 
                 <main className="authorization">
